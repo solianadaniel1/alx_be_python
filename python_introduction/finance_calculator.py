@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 income = int(input("Enter your monthly income:"))
-expense = int(input("Enter your monthly expenses:"))
+expense = int(input("Enter your total monthly expenses:"))
 
 monthly_savings = abs(expense - income)
 savings = abs(monthly_savings * 12 + (monthly_savings * 12 * 0.05))

@@ -30,6 +30,8 @@ def main():
             pass
         elif choice == '3':
             # Display the shopping list
+            for i, item in enumerate(shopping_list, start=1):
+                print(f"{i}. {item}")
             print("the shopping list", shopping_list)
             pass
         elif choice == '4':

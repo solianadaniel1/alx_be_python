@@ -27,4 +27,3 @@ if __name__ == "__main__":
             print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     except ValueError:
         print("Invalid temperature. Please enter a numeric value.")
-

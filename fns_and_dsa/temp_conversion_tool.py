@@ -16,9 +16,9 @@ if __name__ == "__main__":
 
     if temp_type == "F":
         result = convert_to_fahrenheit(value)
-        print(f"{value:.2f}°F is equal to {result:.2f}°C")
+        print(f"{value}°F is equal to {result}°C")
     elif temp_type == "C":
         result = convert_to_celsius(value)
-        print(f"{value:.2f}°C is equal to {result:.2f}°F")
+        print(f"{value}°C is equal to {result}°F")
     else:
         print("Invalid value")

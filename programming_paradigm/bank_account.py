@@ -14,7 +14,8 @@ class BankAccount:
         if amount > 0 and amount <= self.account_balance:  # Ensure the amount is positive and does not exceed the balance
             self.account_balance -= amount
             return f"Withdrew: ${amount:.2f}"
-        return "Insufficient funds."  # Correct error message when funds are insufficient
+        else:
+            return "Insufficient funds."  # Correct error message when funds are insufficient
 
     def display_balance(self):
         return f"Current Balance: ${self.account_balance:.2f}"  # Correctly format the balance

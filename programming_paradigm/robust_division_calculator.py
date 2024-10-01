@@ -11,8 +11,8 @@ def safe_divide(numerator, denominator):
         return f"Result: {result:.2f}"
 
     except ZeroDivisionError:
-        return "Error: Cannot divide by zero."
+        return "Cannot divide by zero."
 
     except ValueError:
-        return "Error: Please enter numeric values only."
+        return "Please enter numeric values only."
 

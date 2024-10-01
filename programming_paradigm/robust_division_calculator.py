@@ -2,11 +2,11 @@
 
 def safe_divide(numerator, denominator):
     try:
-        # Try converting inputs to floats
+        # Attempt to convert inputs to floats
         numerator = float(numerator)
         denominator = float(denominator)
 
-        # Perform division
+        # Perform the division
         result = numerator / denominator
         return f"Result: {result:.2f}"
 
@@ -14,5 +14,5 @@ def safe_divide(numerator, denominator):
         return "Error: Cannot divide by zero."
 
     except ValueError:
-        return "Error: Non-numeric input provided."
+        return "Error: Please enter numeric values only."
 

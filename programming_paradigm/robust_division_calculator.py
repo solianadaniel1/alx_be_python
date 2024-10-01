@@ -2,15 +2,11 @@
 
 def safe_divide(numerator, denominator):
     try:
-        # Convert inputs to float
         num = float(numerator)
-        denom = float(denominator)
-        
-        # Perform division
-        result = num / denom
-        return f"Result: {result:.2f}"
+        dem = float(denominator)
+        x = num/dem
+        return f"The result of the division is {x}"
     except ZeroDivisionError:
-        return "Error: Division by zero is not allowed."
+        print("Cannot divide by zero")
     except ValueError:
-        return "Error: Please provide numeric inputs."
-
+        print("Invalid Input not a numeric value")

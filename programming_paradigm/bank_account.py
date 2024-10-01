@@ -1,18 +1,18 @@
-#!/usr/bin/python3
-
 class BankAccount:
-    def __init__(self, account_balance= 0):
-        self.account_balance = account_balance 
+    def __init__(self, initial_balance=0):
+        self.account_balance = initial_balance
 
-    def deposit(self,amount):
+    def deposit(self, amount):
         if amount > 0:
-           self.account_balance += amount
+            self.account_balance += amount
 
     def withdraw(self, amount):
+        # Make sure there's a colon after the if statement
         if 0 < amount <= self.account_balance:
             self.account_balance -= amount
             return True
         return False
 
     def display_balance(self):
-        print(f"Your Current Balance is {self.account_balance}")
+        print(f"Current balance: ${self.account_balance:.2f}")
+

@@ -6,10 +6,10 @@ class Book:
         self.author = author
         self._is_checked_out = False
 
-    def checkout(self):
+    def check_out_book(self):
         self._is_checked_out = True
 
-    def book_return(self):
+    def return_book(self):
         self._is_checked_out = False
 
     def is_available(self):

@@ -10,4 +10,4 @@ class Book:
     def __str__(self):
         print(f" {self.title} by {self.author}, published in {self.year}")
     def __rep__(self):
-        print(f"f"Book('{self.title}', '{self.author}', '{self.year}')".")
+        print(f"Book('{self.title}', '{self.author}', '{self.year}')".")
